@@ -1,0 +1,26 @@
+<p>translation-form works!</p>
+
+
+<div class="card my-5">
+  <div class="card-body">
+
+    <form (ngSubmit)="onSubmit()" #translationForm="ngForm">
+
+      <div class="form-group">
+        <label for="name">Word</label>
+        <input type="text" [(ngModel)]="translation.name"
+               class="form-control"
+               id="name"
+               name="name"
+               placeholder="Enter the word to translate"
+               required #name="ngModel">
+      </div>
+
+      <div [hidden]="!name.pristine" class="alert alert-danger">a word is required</div>
+
+
+      <button type="submit" [disabled]="!translationForm.form.valid"
+              class="btn btn-info">Submit</button>
+    </form>
+  </div>
+</div>
