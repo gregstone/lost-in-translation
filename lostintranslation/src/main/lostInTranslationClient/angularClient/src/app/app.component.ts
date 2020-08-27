@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularClient';
+
+  constructor() {
+    this.title = 'spring boot angular application'
+  }
 }

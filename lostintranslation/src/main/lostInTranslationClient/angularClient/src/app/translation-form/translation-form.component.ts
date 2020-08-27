@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Translation } from '../model/translation';
 import { TranslationService } from '../service/translation.service';
@@ -8,7 +8,7 @@ import { TranslationService } from '../service/translation.service';
   templateUrl: './translation-form.component.html',
   styleUrls: ['./translation-form.component.css']
 })
-export class TranslationFormComponent implements OnInit {
+export class TranslationFormComponent {
 
   translation : Translation;
 
@@ -16,7 +16,7 @@ export class TranslationFormComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private translationService: TranslationService) {
-      this.translation = new Translation[];
+      this.translation = new Translation();
     }
 
   // save new translation in db on submit

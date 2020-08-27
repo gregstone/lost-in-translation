@@ -1,17 +1,15 @@
-<p>translation-form works!</p>
-
-
 <div class="card my-5">
   <div class="card-body">
 
     <form (ngSubmit)="onSubmit()" #translationForm="ngForm">
 
       <div class="form-group">
-        <label for="name">Word</label>
-        <input type="text" [(ngModel)]="translation.name"
+        <label for="word">Word</label>
+        <input type="text"
+               [(ngModel)]="translation.word"
                class="form-control"
-               id="name"
-               name="name"
+               id="word"
+               name="word"
                placeholder="Enter the word to translate"
                required #name="ngModel">
       </div>

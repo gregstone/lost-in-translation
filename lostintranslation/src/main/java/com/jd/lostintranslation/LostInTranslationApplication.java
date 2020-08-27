@@ -18,7 +18,7 @@ public class LostInTranslationApplication {
 	@Bean
 	CommandLineRunner init(TranslationRepository translationRepository) {
 		return args -> {
-			Stream.of("salut", "maison", "table").forEach(inputWord -> {
+			Stream.of("salut").forEach(inputWord -> {
 
 				Translation translation = new Translation(inputWord);
 
@@ -26,12 +26,6 @@ public class LostInTranslationApplication {
 			});
 
 			translationRepository.findAll().forEach(System.out::println);
-
-
-
-			// call google translate api
-//			GoogleTranslate translate = new GoogleTranslate();
-//			translate.googleTranslate("Hola me llamo");
 
 		};
 	}

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1ab6206-1098-4470-8b78-93160963f246" name="Default Changelist" comment="" />
+    <list default="true" id="c1ab6206-1098-4470-8b78-93160963f246" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/lost-in-translation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lost-in-translation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lostInTranslationClient" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +30,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -39,6 +47,18 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="163" y="0" key="#Project_Structure" timestamp="1598480935197">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1598480935197" />
+    <state x="358" y="81" key="FileChooserDialogImpl" timestamp="1598481399320">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="358" y="81" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598481399320" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1598480448521">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1598480448521" />
     <state x="390" y="0" width="770" height="728" key="find.popup" timestamp="1598477173854">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
