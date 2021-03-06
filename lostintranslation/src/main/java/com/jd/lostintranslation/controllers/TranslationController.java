@@ -43,10 +43,12 @@ public class TranslationController {
 
         // perform translation
     	GoogleTranslate translate = new GoogleTranslate();
-        String translatedWord = translate.googleTranslate(wordToTranslate.getWord());
+        String translatedWord = translate.googleTranslate(wordToTranslate.getWordToTranslate());
 
         // build Translation object to return and save
-        Translation buildTranslationObject = new Translation(translatedWord);
+        Translation buildTranslationObject = new Translation(
+                wordToTranslate.getWordToTranslate(),
+                translatedWord);
 
         // save new translation object
         Translation newTranslation = translationRepository.save(buildTranslationObject);

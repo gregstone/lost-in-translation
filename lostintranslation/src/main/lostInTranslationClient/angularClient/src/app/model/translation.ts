@@ -1,4 +1,5 @@
 export class Translation {
       id: string;
-      word: string;
+      translatedWord: string;
+      wordToTranslate: string;
 }

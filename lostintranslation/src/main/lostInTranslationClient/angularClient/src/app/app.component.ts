@@ -9,6 +9,6 @@ export class AppComponent {
   title = 'angularClient';
 
   constructor() {
-    this.title = 'spring boot angular application'
+    this.title = 'Lost in Translation'
   }
 }

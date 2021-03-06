@@ -13,7 +13,7 @@ public class GoogleTranslate {
 
     public String googleTranslate(String inputText){
 
-        String credentialPath = "C:/PORJECT/GOOGLE/flashcard-b52ebc8df412.json";
+        String credentialPath = "C:/PROJECT/GOOGLE/flashcard-b52ebc8df412.json";
 
         // You can specify a credential file by providing a path to GoogleCredentials.
         // Otherwise credentials are read from the GOOGLE_APPLICATION_CREDENTIALS environment variable.

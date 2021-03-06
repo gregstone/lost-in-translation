@@ -6,6 +6,7 @@
       <thead class="thead-dark">
         <tr>
           <th scope="col">#</th>
+          <th scope="col">Word to Translate</th>
           <th scope="col">Translation</th>
         </tr>
       </thead>
@@ -13,7 +14,8 @@
       <tbody>
         <tr *ngFor="let translation of translations">
           <td>{{ translation.id }}</td>
-          <td>{{ translation.word }}</td>
+          <td>{{ translation.wordToTranslate }}</td>
+          <td>{{ translation.translatedWord }}</td>
         </tr>
       </tbody>
 
