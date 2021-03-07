@@ -13,19 +13,8 @@ import java.util.stream.Stream;
 @SpringBootApplication
 public class LostInTranslationApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(LostInTranslationApplication.class, args);
+	public static void main(String[] args) { SpringApplication.run(LostInTranslationApplication.class, args); }
 
-		// todo : to be deleted
-		// TEST JSOUP GOOGLE SEARCH
-		GoogleSearch googleSearch = new GoogleSearch();
-		try {
-			googleSearch.googleSearch("maison");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-	}
 	@Bean
 	CommandLineRunner init(TranslationRepository translationRepository) {
 		return args -> {
