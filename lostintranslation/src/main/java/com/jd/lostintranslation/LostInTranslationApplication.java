@@ -13,7 +13,12 @@ import java.util.stream.Stream;
 @SpringBootApplication
 public class LostInTranslationApplication {
 
-	public static void main(String[] args) { SpringApplication.run(LostInTranslationApplication.class, args); }
+	public static void main(String[] args) {
+		SpringApplication.run(LostInTranslationApplication.class, args);
+
+		GoogleSearch googleSearch = new GoogleSearch();
+		googleSearch.searchOnGoogle();
+	}
 
 	@Bean
 	CommandLineRunner init(TranslationRepository translationRepository) {
