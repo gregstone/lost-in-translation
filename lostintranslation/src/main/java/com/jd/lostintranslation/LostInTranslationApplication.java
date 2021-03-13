@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import java.io.IOException;
+import java.util.Map;
 import java.util.stream.Stream;
 
 @SpringBootApplication
@@ -16,8 +17,12 @@ public class LostInTranslationApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(LostInTranslationApplication.class, args);
 
+		// Test retrieve GOOGLE SEARCH result
 		GoogleSearch googleSearch = new GoogleSearch();
-		googleSearch.searchOnGoogle();
+		Map<String, String> resultLinksAnTitle = googleSearch.searchOnGoogle("translate");
+
+		System.out.println("LIST OF LINKS AND TITLE == " + resultLinksAnTitle);
+
 	}
 
 	@Bean
