@@ -1,6 +1,6 @@
 package com.jd.lostintranslation.repositories;
 
-import com.jd.lostintranslation.GoogleSearch;
+import com.jd.lostintranslation.entities.Search;
 import org.springframework.data.repository.CrudRepository;
 
-public interface GoogleSearchRepository extends CrudRepository<GoogleSearch, Long> {}
+public interface GoogleSearchRepository extends CrudRepository<Search, Long> {}
