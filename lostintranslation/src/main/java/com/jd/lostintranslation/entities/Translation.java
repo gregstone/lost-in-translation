@@ -55,7 +55,8 @@ public class Translation {
     public String toString() {
         return "Translation{" +
                 "id=" + id +
-                ", word='" + wordToTranslate + '\'' +
+                ", wordToTranslate='" + wordToTranslate + '\'' +
+                ", translatedWord='" + translatedWord + '\'' +
                 '}';
     }
 }
