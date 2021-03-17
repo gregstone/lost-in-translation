@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.HashMap;
 import java.util.List;
@@ -21,8 +22,11 @@ public class GoogleSearch {
         // set path to chromedriver
         System.setProperty("webdriver.chrome.driver", "C:\\APPLICATIONS\\webdriver\\chromedriver.exe");
 
+        // configure chrome browser options : run chrome headless
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
         // create chrome session
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(options);
         // call url
         driver.get("https://www.google.com/search?q="+ wordToSearch +"&rlz=1C1CHBF_frFR908FR908&oq=camion&aqs=chrome..69i57j0l9.7453j0j7&sourceid=chrome&ie=UTF-8");
 
@@ -44,6 +48,9 @@ public class GoogleSearch {
 
             linksAndTitle.put(urlText, href);
         });
+
+        // close browser and driver
+        driver.quit();
 
         return linksAndTitle;
     }
