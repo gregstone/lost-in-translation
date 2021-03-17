@@ -16,13 +16,6 @@ public class LostInTranslationApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LostInTranslationApplication.class, args);
-
-		// Test retrieve GOOGLE SEARCH result
-		GoogleSearch googleSearch = new GoogleSearch();
-		Map<String, String> resultLinksAnTitle = googleSearch.searchOnGoogle("translate");
-
-		System.out.println("LIST OF LINKS AND TITLE == " + resultLinksAnTitle);
-
 	}
 
 	@Bean
@@ -39,8 +32,4 @@ public class LostInTranslationApplication {
 
 		};
 	}
-
-
-
-
 }
