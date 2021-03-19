@@ -1,0 +1,24 @@
+<div class="card my-5">
+    <div class="card-body">
+  
+      <form (ngSubmit)="onSubmit()" #googleSearchForm="ngForm">
+  
+        <div class="form-group">
+          <label for="word">word to search on google</label>
+          <input type="text"
+                 [(ngModel)]="googleSearch.wordToSearch"
+                 class="form-control"
+                 id="word"
+                 name="wordToSearch"
+                 placeholder="Enter the word to search"
+                 required #name="ngModel">
+        </div>
+  
+        <div [hidden]="!name.pristine" class="alert alert-danger">a word is required</div>
+  
+  
+        <button type="submit" [disabled]="!googleSearchForm.form.valid"
+                class="btn btn-info">Submit</button>
+      </form>
+    </div>
+</div>

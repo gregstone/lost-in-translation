@@ -18,7 +18,7 @@ public class GoogleSearhController {
     }
 
     // todo : test with postman
-    @PostMapping("/googleSearch")
+    @PostMapping("/search")
     public Search googleSearch(@RequestBody Search wordToSearch) {
 
         // perform google search

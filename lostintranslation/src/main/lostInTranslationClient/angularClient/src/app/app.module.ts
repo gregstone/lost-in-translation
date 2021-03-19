@@ -9,13 +9,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { TranslationListComponent } from './translation-list/translation-list.component';
 import { TranslationFormComponent } from './translation-form/translation-form.component';
 import { TranslationService } from './service/translation.service';
+import { GoogleSearchFormComponent } from './google-search-form/google-search-form.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TranslationListComponent,
-    TranslationFormComponent
+    TranslationFormComponent,
+    GoogleSearchFormComponent
   ],
   imports: [
     BrowserModule,
