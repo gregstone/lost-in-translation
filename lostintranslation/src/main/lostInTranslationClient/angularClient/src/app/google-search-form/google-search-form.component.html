@@ -10,11 +10,11 @@
                  id="word"
                  name="wordToSearch"
                  placeholder="Enter the word to search"
-                 required #name="ngModel">
+                 required #name="ngModel"
+                 (keyup)="handleKeyUp($event)">
         </div>
   
         <div [hidden]="!name.pristine" class="alert alert-danger">a word is required</div>
-  
   
         <button type="submit" [disabled]="!googleSearchForm.form.valid"
                 class="btn btn-info">Submit</button>

@@ -37,6 +37,5 @@ export class GoogleSearchFormComponent {
 
   handleSubmit(e: { keyCode?: number; preventDefault?: any; }){
     e.preventDefault();
-    alert("ERROR");
   }
 }

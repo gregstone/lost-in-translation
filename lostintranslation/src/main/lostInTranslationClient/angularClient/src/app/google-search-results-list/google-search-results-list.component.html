@@ -16,10 +16,12 @@
                 <td class="d-inline-block col-1">{{ searchResult.id }}</td>
                 <td class="d-inline-block col-1">{{ searchResult.wordToSearch }}</td>
                 <div class="d-inline-block col-10 p-0">
-                    <tr *ngFor="let mapEntry of searchResult.searchResults | keyvalue">
-                            <td>{{mapEntry.key}} </td>
-                            <td>  
-                                <a href="{{mapEntry.value}}" target="_blank">{{mapEntry.value}}</a>
+                    <tr *ngFor="let mapEntry of searchResult.searchResults | keyvalue" 
+                        class="row m-0" 
+                        style="width: 100%">
+                            <td style="width: 93%;">{{mapEntry.key}}</td>
+                            <td style="width: 7%;">        
+                                <a href="{{mapEntry.value}}" target="_blank">link</a>
                             </td>
                     </tr>
                 </div>
