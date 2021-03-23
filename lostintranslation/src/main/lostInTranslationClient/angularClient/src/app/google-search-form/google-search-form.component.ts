@@ -28,4 +28,15 @@ export class GoogleSearchFormComponent {
    this.router.navigate(['/searchList']);
   }
 
+  // SUBMIT FORM WITH ENTER KEY PRESS
+  handleKeyUp(e: { keyCode: number; }){
+    if(e.keyCode === 13){
+      this.handleSubmit(e);
+    }
+  }
+
+  handleSubmit(e: { keyCode?: number; preventDefault?: any; }){
+    e.preventDefault();
+    alert("ERROR");
+  }
 }
