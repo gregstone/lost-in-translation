@@ -2,9 +2,11 @@ package com.jd.lostintranslation.controllers;
 
 import com.jd.lostintranslation.GoogleSearch;
 import com.jd.lostintranslation.entities.Search;
+import com.jd.lostintranslation.entities.Translation;
 import com.jd.lostintranslation.repositories.GoogleSearchRepository;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -38,4 +40,9 @@ public class GoogleSearhController {
 
         return newSearch;
     }
+    @GetMapping("/searchList")
+    public List<Search> getSearch() {
+        return (List<Search>) googleSearchRepository.findAll();
+    }
+
 }

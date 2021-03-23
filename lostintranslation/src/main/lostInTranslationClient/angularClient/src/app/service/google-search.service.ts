@@ -9,9 +9,15 @@ import { Observable } from 'rxjs';
 export class GoogleSearchService {
 
   private googleSearchPostUrl: string;
+  private googleSearchstUrl: string;
 
   constructor(private http: HttpClient) { 
-    this.googleSearchPostUrl = 'http://localhost:8080/search'
+    this.googleSearchPostUrl = 'http://localhost:8080/search',
+    this.googleSearchstUrl = 'http://localhost:8080/searchList';
+  }
+
+  public findAll(): Observable<GoogleSearch[]> {
+    return this.http.get<GoogleSearch[]>(this.googleSearchstUrl);
   }
 
   public save(googleSearch: GoogleSearch) {

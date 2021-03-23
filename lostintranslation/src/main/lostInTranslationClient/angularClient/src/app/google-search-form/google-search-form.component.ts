@@ -19,17 +19,13 @@ export class GoogleSearchFormComponent {
       this.googleSearch = new GoogleSearch();
     }
 
-
-  
   onSubmit() {
-    this.googleSearchService.save(this.googleSearch).subscribe(result => this.gotoTranslationList());
+    this.googleSearchService.save(this.googleSearch).subscribe(result => this.gotoGoogleSearchResulsList());
   }
 
-
-  // todo : to be remove just for test purpose 
-  // redirect user to /translations in order to re display the list of translation after new translation add
-  gotoTranslationList() {
-    this.router.navigate(['/translations']);
+  // redirect user to /searchList
+  gotoGoogleSearchResulsList() {
+   this.router.navigate(['/searchList']);
   }
 
 }

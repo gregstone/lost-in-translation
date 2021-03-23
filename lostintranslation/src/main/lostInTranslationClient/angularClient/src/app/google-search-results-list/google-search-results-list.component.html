@@ -1,0 +1,32 @@
+<div class="card my-5">
+    <div class="card-body">
+        
+        <table class="table table-bordered table-striped">
+            
+            <thead class="thead-dark">
+                <tr class="row m-0">
+                    <th class="d-inline-block col-1">#</th>
+                    <th class="d-inline-block col-1">Search</th>
+                    <th class="d-inline-block col-10">Results</th>
+                </tr>
+            </thead>
+  
+        <tbody>
+            <tr *ngFor="let searchResult of googleSearchResults" class="row m-0">
+                <td class="d-inline-block col-1">{{ searchResult.id }}</td>
+                <td class="d-inline-block col-1">{{ searchResult.wordToSearch }}</td>
+                <div class="d-inline-block col-10 p-0">
+                    <tr *ngFor="let mapEntry of searchResult.searchResults | keyvalue">
+                            <td>{{mapEntry.key}} </td>
+                            <td>  
+                                <a href="{{mapEntry.value}}" target="_blank">{{mapEntry.value}}</a>
+                            </td>
+                    </tr>
+                </div>
+            </tr>
+        </tbody>
+  
+      </table>
+    </div>
+  </div>
+  

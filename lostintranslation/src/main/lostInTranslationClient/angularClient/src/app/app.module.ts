@@ -10,6 +10,7 @@ import { TranslationListComponent } from './translation-list/translation-list.co
 import { TranslationFormComponent } from './translation-form/translation-form.component';
 import { TranslationService } from './service/translation.service';
 import { GoogleSearchFormComponent } from './google-search-form/google-search-form.component';
+import { GoogleSearchResultsListComponent } from './google-search-results-list/google-search-results-list.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { GoogleSearchFormComponent } from './google-search-form/google-search-fo
     AppComponent,
     TranslationListComponent,
     TranslationFormComponent,
-    GoogleSearchFormComponent
+    GoogleSearchFormComponent,
+    GoogleSearchResultsListComponent
   ],
   imports: [
     BrowserModule,
