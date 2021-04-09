@@ -11,6 +11,8 @@ import { TranslationFormComponent } from './translation-form/translation-form.co
 import { TranslationService } from './service/translation.service';
 import { GoogleSearchFormComponent } from './google-search-form/google-search-form.component';
 import { GoogleSearchResultsListComponent } from './google-search-results-list/google-search-results-list.component';
+import { ImageSearchFormComponent } from './image-search-form/image-search-form.component';
+import { ImageSearchResultsListComponent } from './image-search-results-list/image-search-results-list.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { GoogleSearchResultsListComponent } from './google-search-results-list/g
     TranslationListComponent,
     TranslationFormComponent,
     GoogleSearchFormComponent,
-    GoogleSearchResultsListComponent
+    GoogleSearchResultsListComponent,
+    ImageSearchFormComponent,
+    ImageSearchResultsListComponent
   ],
   imports: [
     BrowserModule,
